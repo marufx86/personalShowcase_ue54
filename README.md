@@ -45,15 +45,32 @@ Welcome to my Unreal Engine 5 portfolio repository! This collection showcases my
 ---
 
 ### 5. **Multiplayer Widget Value Replication System**
-   - **Description:** A voting system that demonstrates real-time widget value replication across multiple clients in a networked environment.
+   - **Description:** A sophisticated voting system demonstrating real-time widget value replication across multiple clients in a multiplayer environment.
    - **Features:**
-     - **Interactive UI:** Map selection widget featuring **Jungle** and **Desert** options.
-     - **Real-Time Synchronization:** Vote counts update instantly for all connected players via dedicated buttons.
-     - **Scalability:** Real-time vote count sync across all connected clients. Successfully tested with 4 simultaneous clients (Client 1, Client 2, Client 3, Client 4).
-   - **Technical Achievement:** Widget value replication is challenging in Unreal Engine, and this implementation is a solution for sync UI data across networked players.
+     - Interactive voting widget displaying two map options: **Jungle** and **Desert**.
+     - Each map has its own dedicated vote button.
+     - Real-time vote count synchronization across all connected clients.
+     - Successfully tested with 4 simultaneous clients (Client 1, Client 2, Client 3, Client 4).
+   - **Technical Achievement:** Widget value replication is notoriously challenging in Unreal Engine, and this implementation showcases a robust solution for synchronizing UI data across networked players.
    - **Functionality:** When any player votes for a map, the vote count instantly updates for all other players, ensuring everyone sees the same voting results in real-time.
-   - **YouTube Demo:** upcoming
-   - <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/826a89c7-771b-4ca4-93bb-bb8c6e953e87" />
+   - **YouTube Demo:** https://youtu.be/ZgktskVlHRs
+
+---
+
+### 6. **3D Space Widget Button Interaction**
+   - **Description:** An advanced implementation of interactive UI widgets placed directly in 3D world space, allowing players to interact with buttons as physical objects in the game environment rather than traditional 2D screen overlays.
+   - **Technical Implementation:** The widget is embedded within a BP Actor and placed directly in the level, enabling full interaction capabilities including hover effects, button presses, and other interactive states.
+   - **Features:**
+     - Widgets exist as physical objects in 3D space that players can approach and interact with.
+     - Full support for hover states, pressed states, and visual feedback.
+     - Maintains all standard widget interaction functionality in a 3D environment.
+   - **Use Cases:**
+     - **Door Controls:** Interactive panels for opening/closing doors or activating mechanisms.
+     - **Interactive Panels:** Control stations, computer terminals, or machinery interfaces.
+     - **Item Information Displays:** Informational kiosks, product displays, or museum exhibits.
+     - **Environmental Interactions:** Elevator buttons, vending machines, or any in-world interactive elements.
+   - **Location:** Check the **WBP_ButtonInteraction** widget and BP_Door in the project files.
+   <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d25446d5-3714-4143-b1dd-19affdf71771" />
 
 
 ---
@@ -64,7 +81,7 @@ This repository is a testament to my passion for game development and my ability
 
 ## Repository Structure
 
-- **/UI**: Contains all UI-related assets, including the **WBP_SliderWithProgress**, **WBP_SpawnAtMouse**, and multiplayer voting widget blueprints.
+- **/UI**: Contains all UI-related assets, including the **WBP_SliderWithProgress**, **WBP_SpawnAtMouse**, **WBP_ButtonInteraction**, and multiplayer voting widget blueprints.
 - **/Characters**: Includes the medieval-inspired character models and related assets.
 - **/Maps**: Features demonstration levels such as **"WidgetSlider"** to showcase the implemented features.
 
